@@ -2,11 +2,9 @@
 # New → Blueprint → connect repo → use this file at repo root.
 
 services:
-  # Vite React static site — client-only, data stored in browser local storage
   - type: web
     name: ledger-time-tracker
     runtime: static
-    rootDir: time-tracker-web-project
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     routes:
